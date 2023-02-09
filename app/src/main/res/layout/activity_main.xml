@@ -4,60 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1e1d1d"
     tools:context=".MainActivity">
 
+
     <RelativeLayout
+        android:id="@+id/centerhorizontalline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical = "true"
-        android:id="@+id/centerhorizontalline">
+        android:layout_centerVertical="true" />
 
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/male"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/heightlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toStartOf="@+id/centerverticalline"
+        android:background="@drawable/malefemalenotfocus"
+        android:gravity="center">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/black"
+            android:src="@drawable/male" />
+
+
+        <TextView
+            android:id="@+id/textmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Male"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            />
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical = "true"
-        android:id="@+id/centerverticalline"
-        />
-
 
     <RelativeLayout
+        android:id="@+id/heightlayout"
         android:layout_width="340dp"
         android:layout_height="150dp"
         android:layout_above="@id/centerhorizontalline"
-        android:layout_marginBottom="-50dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:id="@+id/heightlayout"
-        >
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/cardbackground">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Height"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/ubuntu_medium"
-            />
+            android:text="Height"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/currentheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="170"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/currentheight"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="cm"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <SeekBar
+            android:id="@+id/seekbarforheight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
-            android:progressTint="#FF4c4c"
             android:layout_marginRight="10dp"
-            android:id="@+id/seekbarforheight"/>
+            android:layout_marginBottom="20dp"
+            android:progressTint="#FF4c4c" />
 
     </RelativeLayout>
 
-
+    <android.widget.Button
+        android:id="@+id/calculatebmi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Calculate Your BMI"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
