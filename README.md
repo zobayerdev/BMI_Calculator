@@ -1,5 +1,5 @@
 # Body mass index Calculator system
-It;s a BMI Calculator. You can measurement your bmi.
+It's a BMI Calculator. You can measurement your bmi.
 
 <img src="https://user-images.githubusercontent.com/74914169/217921823-785c1c3d-9b50-468f-a51a-354d2cece76b.png" width=30% height=30% > 
 
