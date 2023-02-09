@@ -5,14 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1e1d1d"
+    android:scrollbars="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Body Mass Index Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
 
     <RelativeLayout
         android:id="@+id/centerhorizontalline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        />
 
 
     <RelativeLayout
