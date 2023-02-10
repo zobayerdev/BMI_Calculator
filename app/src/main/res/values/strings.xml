@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
+    <string name="body_mass_index_calculator">Body Mass Index Calculator</string>
+    <string name="app_name_">Body Mess Indexing Calculator</string>
 </resources>

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Body Mass Index Calculator"
+        android:text="@string/body_mass_index_calculator"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp" />
@@ -23,8 +23,7 @@
         android:id="@+id/centerhorizontalline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        />
+        android:layout_centerVertical="true" />
 
 
     <RelativeLayout
@@ -173,7 +172,7 @@
             android:background="@drawable/plusminus">
 
             <ImageView
-                android:id="@+id/decrementweight"
+                android:id="@+id/incrementweight"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_plus" />
@@ -191,7 +190,7 @@
             android:background="@drawable/plusminus">
 
             <ImageView
-                android:id="@+id/incrementweight"
+                android:id="@+id/decrementweight"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_minus" />
@@ -249,7 +248,7 @@
             android:background="@drawable/plusminus">
 
             <ImageView
-                android:id="@+id/decrementage"
+                android:id="@+id/incrementage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_plus" />
@@ -267,7 +266,7 @@
             android:background="@drawable/plusminus">
 
             <ImageView
-                android:id="@+id/incrementage"
+                android:id="@+id/decrementage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_minus" />
