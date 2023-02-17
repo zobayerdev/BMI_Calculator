@@ -331,7 +331,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
-            android:progressTint="#FF4c4c" />
+            android:progressTint="#FF4c4c"
+            android:thumbTint="@color/white" />
 
     </RelativeLayout>
 

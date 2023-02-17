@@ -17,6 +17,27 @@
         android:padding="10dp"
         android:src="@drawable/ic_ok" />
 
+    <ImageView
+        android:id="@+id/dev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/contentlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_dev" />
+
+    <TextView
+        android:id="@+id/develop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dev"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="developer"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
     <RelativeLayout
         android:id="@+id/contentlayout"
         android:layout_width="300dp"

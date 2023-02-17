@@ -2,6 +2,7 @@ package com.trodev.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,7 +17,7 @@ public class BmiActivity extends AppCompatActivity {
     android.widget.Button recalculatebmi;
     TextView mbmidisplay, mbmicategory, mgender;
     Intent intent;
-    ImageView mimageview;
+    ImageView mimageview, mdev;
     String mbmi;
     float intbmi;
     String height;
@@ -25,6 +26,7 @@ public class BmiActivity extends AppCompatActivity {
     float intweight;
     RelativeLayout mbackground;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,7 @@ public class BmiActivity extends AppCompatActivity {
         mgender = findViewById(R.id.genderdisplay);
         mimageview = findViewById(R.id.bmiimage);
         mbackground = findViewById(R.id.contentlayout);
+        mdev = findViewById(R.id.dev);
 
 
         intent = getIntent();
@@ -54,6 +57,8 @@ public class BmiActivity extends AppCompatActivity {
         intbmi = intweight/(intheight*intheight);
 
         mbmi = Float.toString(intbmi);
+
+
 
         if(intbmi < 16)
         {
@@ -96,6 +101,14 @@ public class BmiActivity extends AppCompatActivity {
         mgender.setText("Gender: "+intent.getStringExtra("gender"));
         mbmidisplay.setText("Your BMI is: "+mbmi);
 
+
+        mdev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BmiActivity.this, Developer.class);
+                startActivity(intent);
+            }
+        });
 
 
         recalculatebmi.setOnClickListener(new View.OnClickListener() {
